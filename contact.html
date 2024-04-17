@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="Assets/images/logop.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discoveria</title>
+
+    <!-- remix cdn -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+    
+
+    <link rel="stylesheet" href="Assets/css/style.css">
+    <link rel="stylesheet" href="Assets/css/contact.css">
+
+    <style>
+        body {
+            background-image: url("Assets/images/bg.png");
+        }
+    </style>
+</head>
+<body>
+   <nav>
+    <div class="container nav_container">
+        <a href="index.html"><h2>Discoveria.</h2></a>
+        <ul class="nav_menu">
+            <li><a href="index.html">Acceuil</a></li>
+            <li><a href="about.html">A propos</a></li>
+            <li><a href="museum.html">Musé VR</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <a href="registration.html" class="btn btn-primary">S'inscrire</a>
+        </ul>
+        <button id="open-menu-btn"><i class="ri-menu-2-line"></i></button>
+        <button id="close-menu-btn"><i class="ri-close-large-line"></i></button>
+    </div>
+   </nav>
+   <!-- ============================= Fin Navbar============================== -->
+
+
+
+
+
+
+
+
+
+
+   <section class="contact">
+        <div class="container contact_container">
+            <aside class="contact_aside">
+                <div class="aside_image">
+                    <img src="Assets/images/2.png">
+                </div>
+                <h2>Nous contacter</h2>
+                <p>
+                    Plus qu'une plateforme en ligne, Discoveria est une communauté 
+                    qui vous rapproche de votre héritage passé.
+                </p>
+                <ul class="contact_details">
+                    <li>
+                        <i class="ri-phone-line"></i>
+                        <h5>+243 978 120 153</h5>
+                    </li>
+                    <li>
+                        <i class="ri-mail-line"></i>
+                        <h5>mail@@cubestudiogmail.com</h5>
+                    </li>
+                    <li>
+                        <i class="ri-map-pin-line"></i>
+                        <h5>Kinshasa, RDC</h5>
+                    </li>
+                </ul>
+                <ul class="contact_socials">
+                    <li><a href="https://facebook.com" target="_blank"><i class="ri-facebook-fill"></i></a></li>
+                    <li><a href="https://facebook.com" target="_blank"><i class="ri-instagram-line"></i></a></li>
+                    <li><a href="https://facebook.com" target="_blank"><i class="ri-twitter-x-line"></i></a></li>
+                    <li><a href="https://facebook.com" target="_blank"><i class="ri-linkedin-fill"></i></a></li>
+                </ul>
+            </aside>
+
+
+
+            <form action="https://formspree.io/f/xnqebena" method="POST" class="contact_form">
+                <div class="form_name">
+                    <input type="text" name="First Name" placeholder="First Name" required>
+                    <input type="text" name="Last Name" placeholder="Last Name" required>
+                </div>
+                <input type="email" name="Email Address" placeholder="Your Email" required>
+                <textarea name="Message" rows="7" placeholder="Message" required></textarea>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+
+            </form>
+        </div>
+   </section>
+
+
+
+
+
+
+
+
+
+
+
+   <footer>
+    <div class="container footer_container">
+        <div class="footer_1">
+            <a href="index.html" class="footer_logo"><h4>Discoveria.</h4></a>
+            <p>
+                Plus qu'une plateforme en ligne, Discoveria est une communauté 
+                qui vous rapproche de votre héritage pas.
+            </p>
+        </div>
+
+        <div class="footer_2">
+            <h4>Permalinks</h4>
+            <ul class="permalinks">
+                <li><a href="index.html">Acceuil</a></li>
+                <li><a href="index.html">A propos</a></li>
+                <li><a href="index.html">Musé VR</a></li>
+                <li><a href="index.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer_3">
+            <h4>Privacy</h4>
+            <ul class="privacy">
+                <li><a href="#">Privacy policy</a></li>
+                <li><a href="#">Terms and conditions</a></li>
+                <li><a href="#">Refund policy</a></li>
+            </ul>
+        </div>
+
+        <div class="footer_4">
+            <h4>Nous contacter</h4>
+            <div>
+                <p>+243 978 120 153</p>
+                <p>mail@cubestudio.net</p>
+            </div>
+
+            <ul class="footer_socials">
+                <li>
+                    <a href="#"><i class="uil uil-facebook-f"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="uil uil-instaagram-alt"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="uil uil-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="uil uil-linkedin-alt"></i></a>
+                </li>
+            </ul>
+        </div>
+        </div>
+        <div class="footer_copyright">
+            <small>Copyright &copy; Discoveria Verse</small>
+        </div>
+</footer>
+
+
+
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="Assets/jS/main.js"></script>
+
+
+<script>
+    var swiper = new Swiper(".myswiper",{
+        slidesPerview: 1,
+        spaceBetween: 30,
+        pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        },
+        //when window width is >= 600px
+        breakpoints: {
+            600: {
+                slidesPerview: 2
+            }
+        }
+    });
+</script>
+
+</body>
+</html>
